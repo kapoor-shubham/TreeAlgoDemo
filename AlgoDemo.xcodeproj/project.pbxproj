@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5A9DBCFF2148D2D100F66488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DBCFE2148D2D100F66488 /* AppDelegate.swift */; };
-		5A9DBD012148D2D100F66488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DBD002148D2D100F66488 /* ViewController.swift */; };
 		5A9DBD042148D2D100F66488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DBD022148D2D100F66488 /* Main.storyboard */; };
 		5A9DBD062148D2DD00F66488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DBD052148D2DD00F66488 /* Assets.xcassets */; };
 		5A9DBD092148D2DD00F66488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DBD072148D2DD00F66488 /* LaunchScreen.storyboard */; };
 		5A9DBD142148D2DD00F66488 /* AlgoDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DBD132148D2DD00F66488 /* AlgoDemoTests.swift */; };
+		5A9DBD1F2148D30100F66488 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DBD1E2148D30100F66488 /* Node.swift */; };
+		5A9DBD212148D60D00F66488 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DBD202148D60D00F66488 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,6 @@
 /* Begin PBXFileReference section */
 		5A9DBCFB2148D2D100F66488 /* AlgoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9DBCFE2148D2D100F66488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A9DBD002148D2D100F66488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A9DBD032148D2D100F66488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A9DBD052148D2DD00F66488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A9DBD082148D2DD00F66488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		5A9DBD0F2148D2DD00F66488 /* AlgoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9DBD132148D2DD00F66488 /* AlgoDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoDemoTests.swift; sourceTree = "<group>"; };
 		5A9DBD152148D2DD00F66488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9DBD1E2148D30100F66488 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		5A9DBD202148D60D00F66488 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				5A9DBCFE2148D2D100F66488 /* AppDelegate.swift */,
-				5A9DBD002148D2D100F66488 /* ViewController.swift */,
+				5A9DBD1E2148D30100F66488 /* Node.swift */,
+				5A9DBD202148D60D00F66488 /* ViewController.swift */,
 				5A9DBD022148D2D100F66488 /* Main.storyboard */,
 				5A9DBD052148D2DD00F66488 /* Assets.xcassets */,
 				5A9DBD072148D2DD00F66488 /* LaunchScreen.storyboard */,
@@ -197,8 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A9DBD012148D2D100F66488 /* ViewController.swift in Sources */,
+				5A9DBD212148D60D00F66488 /* ViewController.swift in Sources */,
 				5A9DBCFF2148D2D100F66488 /* AppDelegate.swift in Sources */,
+				5A9DBD1F2148D30100F66488 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
