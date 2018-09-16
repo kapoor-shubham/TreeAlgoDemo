@@ -12,8 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addNodeChilds()
     }
     
     func addNodeChilds() {
@@ -55,13 +54,55 @@ class ViewController: UIViewController {
         let cbr = Node(value: "CBR")
         let activa = Node(value: "Activa")
         let classic = Node(value: "Brio")
-        let amaze = Node(value: "Amaze")
-        let mustang = Node(value: "Mustang")
+        let thunderBird = Node(value: "ThunderBird")
         
-        toyota.add(child: etios)
-        honda.add(child: civic)
-        honda.add(child: brio)
-        honda.add(child: amaze)
-        ford.add(child: mustang)
+        hero.add(child: cbr)
+        hero.add(child: activa)
+        royalEnfild.add(child: classic)
+        royalEnfild.add(child: thunderBird)
+        
+        print(vehical)
+        
+        print(vehical.search(value: "Hero")!)
+    }
+}
+
+extension Node: CustomStringConvertible {
+    var description: String {
+        var text = "\(value)"   //  We've declared a text variable. This will hold the entire string. For now, we've given it the current node's value.
+        
+        if !children.isEmpty {
+            text += ": {" + children.map { $0.description }.joined(separator: ", ") + "} "  // This will add the children of children. To do so, we'll recursively append children's description, whilst adding some braces to give the string some context in regards to the structure of the children.
+            
+        /* Simple Syntax Apart from map that we can use */
+//            if !children.isEmpty {
+//                text += " {"
+//                for child in children {
+//                    if children.last?.value != child.value {
+//                        text += child.description + ", "
+//                    } else {
+//                        text += child.description
+//                    }
+//                }
+//                text += "} "
+//            }
+            
+        }
+        return text
+    }
+}
+
+extension Node {
+    func search(value: String) -> Node? {
+        if value == self.value {
+            return self
+        }
+        
+        for child in children {
+            if let childrenFound = child.search(value: value) {
+                return childrenFound
+            }
+        }
+        return nil
     }
 }
